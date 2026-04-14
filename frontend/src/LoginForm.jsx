@@ -22,17 +22,7 @@ const LoginForm = () => {
   const [loading, setLoading] = useState(false);
   const [authStatus, setAuthStatus] = useState(null);
 
-  const authenticateUser = (data) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (data.email === "test@example.com" && data.password === "123456") {
-          resolve("Login successful!");
-        } else {
-          reject("Invalid credentials!");
-        }
-      }, 2000);
-    });
-  };
+  
 
 
 
